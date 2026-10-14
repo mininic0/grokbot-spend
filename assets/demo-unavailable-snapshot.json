@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T18:24:00Z",
+  "mode": "demo",
+  "account": {
+    "key": "synthetic-account",
+    "label": "Demo account"
+  },
+  "period": {
+    "start": "2026-10-01T00:00:00Z",
+    "end": "2026-11-01T00:00:00Z"
+  },
+  "weekly": {
+    "percentUsed": 65.0,
+    "resetsAt": "2026-10-16T00:00:00Z"
+  },
+  "totals": {
+    "usageCents": null,
+    "includedCents": null,
+    "onDemandCents": null,
+    "todayCents": null
+  },
+  "reconciliation": {
+    "status": "unavailable",
+    "referenceCents": null,
+    "attributedCents": null,
+    "differenceCents": null,
+    "coveragePercent": null,
+    "label": "Dollar reconciliation is unavailable because the provider omitted aggregate amounts."
+  },
+  "bots": [
+    {
+      "id": "demo-inbox",
+      "name": "Inbox assistant",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 824000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Provider billing \u00b7 personal workspace"
+    },
+    {
+      "id": "demo-briefing",
+      "name": "Morning briefing",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 1960000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Provider billing \u00b7 daily reading"
+    },
+    {
+      "id": "demo-builder",
+      "name": "Build companion",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 4123000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Provider billing \u00b7 engineering"
+    },
+    {
+      "id": "demo-research",
+      "name": "Deep research",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 5426000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Provider billing \u00b7 research workspace"
+    }
+  ],
+  "models": [
+    {
+      "id": "demo-model-fast",
+      "name": "Demo fast model",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 4500000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic model aggregation"
+    },
+    {
+      "id": "demo-model-pro",
+      "name": "Demo reasoning model",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 7833000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic model aggregation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "demo-automation",
+      "name": "Automations",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 4033000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic originating-flow total"
+    },
+    {
+      "id": "demo-interactive",
+      "name": "Interactive chats",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 8300000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic originating-flow total"
+    }
+  ],
+  "routines": [],
+  "daily": [
+    {
+      "date": "2026-10-01",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-02",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-03",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-04",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-05",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-06",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-07",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-08",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-09",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-10",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-11",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-12",
+      "usageCents": null,
+      "onDemandCents": null
+    },
+    {
+      "date": "2026-10-13",
+      "usageCents": null,
+      "onDemandCents": null
+    }
+  ],
+  "tokenBreakdown": {
+    "input": 4100000,
+    "output": 1533000,
+    "cacheRead": 5800000,
+    "cacheWrite": 900000,
+    "scope": "demo product"
+  },
+  "events": [
+    {
+      "eventId": "demo-event-1",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T16:12:00Z",
+      "model": "demo-model-pro",
+      "conversationId": "demo-research",
+      "modelCostCents": 2350,
+      "chargedCents": 420,
+      "totalTokens": 320000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": null,
+        "routineName": null,
+        "method": "bot-conversation-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "demo-event-2",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T14:35:00Z",
+      "model": "demo-model-fast",
+      "conversationId": "demo-builder",
+      "modelCostCents": 700,
+      "chargedCents": null,
+      "totalTokens": null,
+      "attribution": {
+        "botId": "demo-builder",
+        "routineId": null,
+        "routineName": null,
+        "method": "bot-conversation-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "demo-event-3",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-12T09:10:00Z",
+      "model": "demo-model-pro",
+      "conversationId": null,
+      "modelCostCents": null,
+      "chargedCents": 0,
+      "totalTokens": 54000,
+      "attribution": {
+        "botId": null,
+        "routineId": null,
+        "routineName": null,
+        "method": null,
+        "unassignedReason": "missing-conversation-id"
+      }
+    }
+  ],
+  "warnings": [
+    "Synthetic fixture: aggregate dollar amounts are omitted.",
+    "Token counts remain available; omitted amounts are never interpreted as zero."
+  ],
+  "capabilities": {
+    "bots": true,
+    "models": true,
+    "sources": true,
+    "routines": false,
+    "events": true
+  },
+  "lastError": null
+}

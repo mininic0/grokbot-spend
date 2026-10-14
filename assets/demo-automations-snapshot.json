@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T18:02:00Z",
+  "mode": "demo",
+  "account": {
+    "key": "synthetic-account",
+    "label": "Demo account"
+  },
+  "period": {
+    "start": "2026-10-01T00:00:00Z",
+    "end": "2026-11-01T00:00:00Z"
+  },
+  "weekly": {
+    "percentUsed": 65.0,
+    "resetsAt": "2026-10-16T00:00:00Z"
+  },
+  "totals": {
+    "usageCents": null,
+    "includedCents": null,
+    "onDemandCents": null,
+    "todayCents": null
+  },
+  "reconciliation": {
+    "status": "unavailable",
+    "referenceCents": null,
+    "attributedCents": null,
+    "differenceCents": null,
+    "coveragePercent": null,
+    "label": "Dollar reconciliation is unavailable because the provider omitted aggregate amounts."
+  },
+  "bots": [
+    {
+      "id": "demo-builder",
+      "name": "Build companion",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 4123000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Exact event identifiers \u00b7 recorded consumption value",
+      "eventValueCents": 700,
+      "costBasis": "recorded-usage-value"
+    },
+    {
+      "id": "demo-research",
+      "name": "Deep research",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 5426000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Exact event identifiers \u00b7 recorded consumption value",
+      "eventValueCents": 2350,
+      "costBasis": "recorded-usage-value"
+    },
+    {
+      "id": "unassigned-events",
+      "name": "Unassigned child runs",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 600,
+      "tokens": 224000,
+      "runs": null,
+      "attribution": "unassigned",
+      "detail": "Parent bot unknown \u00b7 recorded value preserved",
+      "costBasis": "recorded-usage-value"
+    }
+  ],
+  "models": [
+    {
+      "id": "demo-model-fast",
+      "name": "Demo fast model",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 4500000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic model aggregation",
+      "eventValueCents": 700,
+      "costBasis": "recorded-usage-value"
+    },
+    {
+      "id": "demo-model-pro",
+      "name": "Demo reasoning model",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 7833000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic model aggregation",
+      "eventValueCents": 2950,
+      "costBasis": "recorded-usage-value"
+    }
+  ],
+  "sources": [
+    {
+      "id": "demo-automation",
+      "name": "Automations",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 4033000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic originating-flow total"
+    },
+    {
+      "id": "demo-interactive",
+      "name": "Interactive chats",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 8300000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic originating-flow total"
+    }
+  ],
+  "routines": [
+    {
+      "id": "demo-research:a",
+      "routineId": "a",
+      "botId": "demo-research",
+      "botName": "Research owner",
+      "name": "Frequent check",
+      "runs": 999,
+      "usageCents": 999999,
+      "eventValueCents": 999999,
+      "modelCostCents": 999999,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": null,
+      "attribution": "exact-routine-run-id",
+      "detail": "Synthetic automation fixture",
+      "costBasis": "model-cost"
+    },
+    {
+      "id": "demo-research:b",
+      "routineId": "b",
+      "botId": "demo-research",
+      "botName": "Research owner",
+      "name": "Expensive report",
+      "runs": 999,
+      "usageCents": 999999,
+      "eventValueCents": 999999,
+      "modelCostCents": 999999,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": null,
+      "attribution": "exact-routine-run-id",
+      "detail": "Synthetic automation fixture",
+      "costBasis": "model-cost"
+    },
+    {
+      "id": "demo-build:a",
+      "routineId": "a",
+      "botId": "demo-build",
+      "botName": "Build owner",
+      "name": "Separate owner check",
+      "runs": 999,
+      "usageCents": 999999,
+      "eventValueCents": 999999,
+      "modelCostCents": 999999,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": null,
+      "attribution": "exact-routine-run-id",
+      "detail": "Synthetic automation fixture",
+      "costBasis": "model-cost"
+    },
+    {
+      "id": "demo-research:d",
+      "routineId": "d",
+      "botId": "demo-research",
+      "botName": "Research owner",
+      "name": "Missing amount",
+      "runs": 999,
+      "usageCents": 999999,
+      "eventValueCents": 999999,
+      "modelCostCents": 999999,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": null,
+      "attribution": "exact-routine-run-id",
+      "detail": "Synthetic automation fixture",
+      "costBasis": "model-cost"
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-10-01",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 100
+    },
+    {
+      "date": "2026-10-02",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 200
+    },
+    {
+      "date": "2026-10-03",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 300
+    },
+    {
+      "date": "2026-10-04",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 400
+    },
+    {
+      "date": "2026-10-05",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 500
+    },
+    {
+      "date": "2026-10-06",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 600
+    },
+    {
+      "date": "2026-10-07",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 700
+    },
+    {
+      "date": "2026-10-08",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 800
+    },
+    {
+      "date": "2026-10-09",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 900
+    },
+    {
+      "date": "2026-10-10",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 1000
+    },
+    {
+      "date": "2026-10-11",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 1100
+    },
+    {
+      "date": "2026-10-12",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 1200
+    },
+    {
+      "date": "2026-10-13",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 1300
+    }
+  ],
+  "tokenBreakdown": {
+    "input": 4100000,
+    "output": 1533000,
+    "cacheRead": 5800000,
+    "cacheWrite": 900000,
+    "scope": "demo product"
+  },
+  "events": [
+    {
+      "eventId": "a-old",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-04T12:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "run-old",
+      "chargedCents": 400,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "a",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "a-cross-old",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-12T17:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "run-cross",
+      "chargedCents": 200,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "a",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "a-cross-new",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T17:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "run-cross",
+      "chargedCents": 300,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "a",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "a-new",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T16:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "run-new",
+      "chargedCents": 700,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "a",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "b",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T15:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "run-b",
+      "chargedCents": 1000,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "b",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "c",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-12T21:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "run-c",
+      "chargedCents": 100,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-build",
+        "routineId": "a",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "c-time",
+      "accountKey": "synthetic-account",
+      "timestampISO": null,
+      "model": "synthetic-automation-alias",
+      "conversationId": "run-no-time",
+      "chargedCents": 20,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-build",
+        "routineId": "a",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "d",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T14:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "run-missing",
+      "chargedCents": null,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "d",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "unknown",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T13:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "unknown-run",
+      "chargedCents": 50,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": null,
+        "routineId": null,
+        "routineName": "Synthetic name",
+        "method": null,
+        "unassignedReason": "unknown-subagent-parent"
+      }
+    },
+    {
+      "eventId": "wrong-account",
+      "accountKey": "different-account",
+      "timestampISO": "2026-10-13T17:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "foreign-run",
+      "chargedCents": 50000,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "a",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "future",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T18:00:01Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "future-run",
+      "chargedCents": 90000,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "a",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "past",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-09-30T17:00:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "past-run",
+      "chargedCents": 80000,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "a",
+        "routineName": "Synthetic name",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "known-bot-unproven",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T17:30:00Z",
+      "model": "synthetic-automation-alias",
+      "conversationId": "demo-research",
+      "chargedCents": 80,
+      "modelCostCents": 99999,
+      "totalTokens": 1000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": null,
+        "routineName": null,
+        "method": "bot-conversation-id",
+        "unassignedReason": null
+      }
+    }
+  ],
+  "warnings": [
+    "Synthetic automation analysis fixture; amounts in aggregate rows intentionally differ from event values to verify the selected basis."
+  ],
+  "capabilities": {
+    "bots": true,
+    "models": true,
+    "sources": true,
+    "routines": true,
+    "events": true
+  },
+  "lastError": null,
+  "eventCoverage": {
+    "through": "2026-10-13T18:00:00Z",
+    "includedCount": 4,
+    "excludedCount": 1,
+    "unknownCount": 2,
+    "unassignedCount": 1,
+    "unassignedValueCents": 50
+  },
+  "eventTotals": {
+    "modelCostCents": 3650,
+    "modelCostCentsMissingCount": 1,
+    "eventCount": 4,
+    "chargedCents": 3650,
+    "chargedCentsMissingCount": 0,
+    "todayRecordedValueCents": 950
+  }
+}

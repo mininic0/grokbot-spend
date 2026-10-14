@@ -1,0 +1,186 @@
+{
+  "tool": {
+    "name": "REA",
+    "version": "6.4.0",
+    "source": "https://github.com/morluto/rea"
+  },
+  "target": {
+    "bundle": "com.anysphere.sand",
+    "version": "0.70.2",
+    "asarSha256": "8dd7b6c4a58439d626a9a7b3766982b7c725db2bc1f6ff68a29fc1ec62ca4cf7"
+  },
+  "mode": "static; application code was not executed",
+  "wholeApplication": {
+    "evidenceId": "ev_37ed213e576ee07d599ebb994a1d3362ff226d96821e89a9297f8f28d4f6bac0",
+    "statistics": {
+      "relevant_files": 616,
+      "nested_asar_containers": 0,
+      "text_bytes_read": 41155737,
+      "invalid_utf8_files": 0,
+      "parsed_javascript_files": 600,
+      "visited_ast_nodes": 7074090,
+      "findings": 5288,
+      "modules": 0,
+      "parse_failures": 0
+    },
+    "coverage": "partial",
+    "nativeIntegrityContradictions": 6,
+    "signatureCheck": "codesign --verify --deep --strict succeeded; archive metadata contradictions were retained, not discarded"
+  },
+  "focusedBillingFunctions": {
+    "evidenceId": "ev_800f9ec024ee7298d2f9a7e6264ac927fd0c0ec46b2084d5f3e103886a2cb951",
+    "functions": [
+      "Rxe",
+      "Gxe",
+      "qan"
+    ],
+    "provenance": "Exact function ranges from the shipped main-app.cjs; external bindings remain unknown",
+    "structuralCoverage": "complete for supplied slices; not whole app",
+    "semanticCoverage": "unknown"
+  },
+  "requestCostTrace": {
+    "evidenceId": "ev_c77f7a976101e398cf3aa8d49a50bb287c5c7f689caa32cb7d32df8b1074732d",
+    "property": "totalRequestCost",
+    "status": "found",
+    "coverage": "partial",
+    "summary": {
+      "total_seed_matches": 1,
+      "traversed_nodes": 1,
+      "traversed_relations": 0,
+      "traversed_functions": 1,
+      "traversed_modules": 1,
+      "relevant_unknowns": 1
+    }
+  },
+  "personalBillingSurfaceReview": {
+    "observedOn": "2026-10-13",
+    "kind": "Independent static inspection, public source review, and separate authenticated read-only validation",
+    "installedBundle": {
+      "packedTextFilesSearched": 588,
+      "fileExtensions": [
+        "js",
+        "cjs",
+        "mjs",
+        "json"
+      ],
+      "absentLiterals": [
+        "GetUsageEvents",
+        "GetFilteredUsageEvents",
+        "usage_event_id",
+        "usageEventId",
+        "get-filtered-usage-events",
+        "export-usage-events-csv"
+      ],
+      "observedDashboardMethods": [
+        "GetCurrentPeriodUsage",
+        "GetAggregatedUsageEvents",
+        "GetDailySpendByCategory"
+      ],
+      "limit": "Absence from this shipped client does not establish absence from the provider backend."
+    },
+    "currentPublicCollectors": {
+      "endpoint": "POST https://cursor.com/api/dashboard/get-filtered-usage-events",
+      "finding": "Reviewed request builders use pagination and optional account/date filters; no raw-detail or verbose flag was found.",
+      "sources": [
+        "https://github.com/jazzenchen/agent-hud-open/blob/main/Sources/AgentHUDCore/Providers/Cursor/CursorClient.swift",
+        "https://github.com/robinebers/openusage/blob/main/Sources/OpenUsage/Providers/Cursor/CursorUsageClient.swift",
+        "https://github.com/junhoyeo/tokscale/blob/main/crates/tokscale-cli/src/cursor.rs"
+      ]
+    },
+    "legacyCsvCandidate": {
+      "endpoint": "GET https://cursor.com/api/dashboard/export-usage-events-csv?strategy=tokens",
+      "personalRequestSource": "https://github.com/junhoyeo/tokscale/blob/b6eddc44c2c0625aaeae72abc6fee067688163c7/crates/tokscale-cli/src/cursor.rs",
+      "observedDateParameters": [
+        "startDate",
+        "endDate"
+      ],
+      "dateParameterSource": "https://github.com/maonanyue/cursor-usage-dashboard/blob/main/README.md",
+      "documentedIdentityColumns": [
+        "Cloud Agent ID",
+        "Automation ID"
+      ],
+      "columnSource": "https://github.com/junhoyeo/tokscale/blob/main/crates/tokscale-core/src/sessions/cursor.rs",
+      "limit": "The parser's documented CSV layouts contain no conversation, request, turn, or usage-event identifier. Automation columns do not prove that personal Grok Bot routine IDs are populated.",
+      "liveValidation": {
+        "result": "The personal-account export succeeded, but both Automation ID and Cloud Agent ID were empty for every returned row in the sampled billing period.",
+        "limit": "This is an account-specific observed result, not a claim about every account or future response. No new ownership mapping was recovered."
+      }
+    }
+  },
+  "publicTelemetryReference": {
+    "observedOn": "2026-10-13",
+    "sources": [
+      "https://cursor.com/docs/enterprise/opentelemetry-export",
+      "https://cursor.com/docs/enterprise/opentelemetry-export/wire"
+    ],
+    "eligibility": "Enterprise team export; not a personal-account collection path.",
+    "history": "No backfill from before destination creation.",
+    "modelRequestCorrelation": [
+      "cursor.usage_event.id",
+      "cursor.request.id",
+      "cursor.conversation.id",
+      "cursor.grok_bot.turn.id"
+    ],
+    "routineCorrelation": [
+      "cursor.grok_bot.routine.id",
+      "cursor.grok_bot.routine_run.id"
+    ],
+    "subagentCorrelation": [
+      "cursor.grok_bot.subagent.id",
+      "cursor.grok_bot.root_turn.id"
+    ],
+    "limits": [
+      "Grok Bot action export requires team Action Recording; personal owners are skipped.",
+      "A routine executed as a subagent has no turn.id on its routine-run record.",
+      "Logs may carry correlation IDs; aggregate metrics do not.",
+      "Export does not provide OpenTelemetry trace_id or span_id.",
+      "Cost metrics are estimates, not invoices."
+    ],
+    "actionsTaken": "Public documentation read only; no telemetry settings were changed."
+  },
+  "limits": [
+    "Static references do not establish live endpoint responses or monetary units.",
+    "No proprietary source, raw graphs, or account data is distributed.",
+    "Live observations, including omitted daily amounts and included-plan event values, were validated separately."
+  ],
+  "historicalLineageReview": {
+    "observedOn": "2026-10-13",
+    "method": "Read-only ListGrokBotTranscriptEntries and ListGrokBotAgentSessions; response bodies inspected in memory and only whitelisted metadata retained locally.",
+    "observations": [
+      "Automation records contain run IDs and request IDs. Exact run-ID to billed sand-subagent conversation-ID joins remain the proven automation attribution method.",
+      "Historical approval records can contain explicit child and parent-agent IDs. A parent-bot link alone does not establish which automation caused a child.",
+      "Some raw history contains spend-initiation records that the installed app filters out. Observed rows were message initiated; their names do not imply a billable amount.",
+      "Exact automation-run request-ID matches in inspected history confirmed already-known ownership; they did not recover additional automation links.",
+      "The session-list response was empty for the sampled account bots. Probing two known billed child IDs as transcript agent IDs returned no entries.",
+      "No client-backed automation-run session namespace, complete routine-run pagination, or historical child-to-routine reader was found."
+    ],
+    "limits": [
+      "Incomplete sampled historical reads do not prove that every backend record or endpoint lacks richer metadata.",
+      "The longest observed routine run lists contained 20 entries. A rolling cap is suggested, not a verified server implementation.",
+      "Retaining exact observed links improves future history but cannot reconstruct links never observed.",
+      "No installed app, routine, model, billing setting, telemetry setting, or server data was modified."
+    ]
+  },
+  "routineIdentityNamespaces": {
+    "observedOn": "2026-10-13",
+    "localRoutineId": "recordJson.id",
+    "providerRoutineId": "automationId on the enclosing record",
+    "finding": "These fields intentionally have distinct namespaces. The native list exposes the parsed record ID, while webhook credential lookup finds the enclosing row by that ID and sends its server automationId. Differences are not conflicting ownership. A missing local record ID stays unknown.",
+    "evidence": "Independent inspection of the installed list parser and webhook credential request builder; separate live metadata read confirmed different IDs on ordinary records."
+  },
+  "localAutomationCacheReview": {
+    "observedOn": "2026-10-14",
+    "targetVersion": "0.70.2",
+    "result": "No structured historical automation ownership recovered from account-scoped local storage.",
+    "sourceObservations": [
+      "The renderer automation store is an in-memory Map. Refresh replaces its installed record arrays and reset clears them.",
+      "Registered persistent slices do not include an automation/routine slice."
+    ],
+    "diskObservations": [
+      "Account-scoped persistence blobs contained no structured record.id to runs[].id ownership candidates.",
+      "The inspected Local Storage and Session Storage had no candidate routine record fields or SST history; no IndexedDB directory was present."
+    ],
+    "limit": "This is a bounded observation of the selected installation, not proof that every provider version or backend lacks historical records.",
+    "action": "Read-only static and local metadata inspection; no application mutation or new authenticated request."
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T18:24:00Z",
+  "mode": "demo",
+  "account": {
+    "key": "synthetic-account",
+    "label": "Demo account"
+  },
+  "period": {
+    "start": "2026-10-01T00:00:00Z",
+    "end": "2026-11-01T00:00:00Z"
+  },
+  "weekly": {
+    "percentUsed": 65.0,
+    "resetsAt": "2026-10-16T00:00:00Z"
+  },
+  "totals": {
+    "usageCents": 18742,
+    "includedCents": 15000,
+    "onDemandCents": 3742,
+    "todayCents": 2240
+  },
+  "reconciliation": {
+    "status": "matched",
+    "referenceCents": 18742,
+    "attributedCents": 18742,
+    "differenceCents": 0,
+    "coveragePercent": 100,
+    "label": "Bot totals match the provider\u2019s product total for this period."
+  },
+  "bots": [
+    {
+      "id": "demo-research",
+      "name": "Deep research",
+      "usageCents": 8246,
+      "includedCents": 6300,
+      "onDemandCents": 1946,
+      "tokens": 5426000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Provider billing \u00b7 research workspace"
+    },
+    {
+      "id": "demo-builder",
+      "name": "Build companion",
+      "usageCents": 5621,
+      "includedCents": 4500,
+      "onDemandCents": 1121,
+      "tokens": 4123000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Provider billing \u00b7 engineering"
+    },
+    {
+      "id": "demo-briefing",
+      "name": "Morning briefing",
+      "usageCents": 3185,
+      "includedCents": 2800,
+      "onDemandCents": 385,
+      "tokens": 1960000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Provider billing \u00b7 daily reading"
+    },
+    {
+      "id": "demo-inbox",
+      "name": "Inbox assistant",
+      "usageCents": 1690,
+      "includedCents": 1400,
+      "onDemandCents": 290,
+      "tokens": 824000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Provider billing \u00b7 personal workspace"
+    }
+  ],
+  "models": [
+    {
+      "id": "demo-model-pro",
+      "name": "Demo reasoning model",
+      "usageCents": 12780,
+      "includedCents": 10200,
+      "onDemandCents": 2580,
+      "tokens": 7833000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic model aggregation"
+    },
+    {
+      "id": "demo-model-fast",
+      "name": "Demo fast model",
+      "usageCents": 5962,
+      "includedCents": 4800,
+      "onDemandCents": 1162,
+      "tokens": 4500000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic model aggregation"
+    }
+  ],
+  "sources": [
+    {
+      "id": "demo-interactive",
+      "name": "Interactive chats",
+      "usageCents": 13176,
+      "includedCents": 10500,
+      "onDemandCents": 2676,
+      "tokens": 8300000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic originating-flow total"
+    },
+    {
+      "id": "demo-automation",
+      "name": "Automations",
+      "usageCents": 5566,
+      "includedCents": 4500,
+      "onDemandCents": 1066,
+      "tokens": 4033000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic originating-flow total"
+    }
+  ],
+  "routines": [
+    {
+      "id": "demo-market-watch",
+      "routineId": "demo-market-watch",
+      "botId": "demo-research",
+      "botName": "Deep research",
+      "name": "Market watch",
+      "usageCents": 2350,
+      "eventValueCents": 420,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 320000,
+      "runs": 1,
+      "attribution": "exact-routine-run-id",
+      "costBasis": "model-cost",
+      "detail": "Synthetic exact run match"
+    },
+    {
+      "id": "demo-build-review",
+      "routineId": "demo-build-review",
+      "botId": "demo-builder",
+      "botName": "Build companion",
+      "name": "Build review",
+      "usageCents": 700,
+      "eventValueCents": 120,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": null,
+      "runs": 1,
+      "attribution": "exact-routine-run-id",
+      "costBasis": "model-cost",
+      "detail": "Synthetic exact run match"
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-10-01",
+      "usageCents": 820,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-02",
+      "usageCents": 1160,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-03",
+      "usageCents": 940,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-04",
+      "usageCents": 1310,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-05",
+      "usageCents": 1030,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-06",
+      "usageCents": 1720,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-07",
+      "usageCents": 1460,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-08",
+      "usageCents": 1280,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-09",
+      "usageCents": 1960,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-10",
+      "usageCents": 1510,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-11",
+      "usageCents": 1700,
+      "onDemandCents": 0
+    },
+    {
+      "date": "2026-10-12",
+      "usageCents": 1612,
+      "onDemandCents": 1502
+    },
+    {
+      "date": "2026-10-13",
+      "usageCents": 2240,
+      "onDemandCents": 2240
+    }
+  ],
+  "tokenBreakdown": {
+    "input": 4100000,
+    "output": 1533000,
+    "cacheRead": 5800000,
+    "cacheWrite": 900000,
+    "scope": "demo product"
+  },
+  "events": [
+    {
+      "eventId": "demo-event-1",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T16:12:00Z",
+      "model": "demo-model-pro",
+      "conversationId": "demo-run-demo-market-watch",
+      "modelCostCents": 2350,
+      "chargedCents": 420,
+      "totalTokens": 320000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "demo-market-watch",
+        "routineName": "Market watch",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "demo-event-2",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T14:35:00Z",
+      "model": "demo-model-fast",
+      "conversationId": "demo-run-demo-build-review",
+      "modelCostCents": 700,
+      "chargedCents": 120,
+      "totalTokens": null,
+      "attribution": {
+        "botId": "demo-builder",
+        "routineId": "demo-build-review",
+        "routineName": "Build review",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "demo-event-3",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-12T09:10:00Z",
+      "model": "demo-model-pro",
+      "conversationId": null,
+      "modelCostCents": null,
+      "chargedCents": 0,
+      "totalTokens": 54000,
+      "attribution": {
+        "botId": null,
+        "routineId": null,
+        "routineName": null,
+        "method": null,
+        "unassignedReason": "missing-conversation-id"
+      }
+    }
+  ],
+  "warnings": [
+    "Demonstration data only. Model, source, and bot views describe the same usage from different angles.",
+    "Routine-level costs remain unavailable without exact billing identifiers."
+  ],
+  "capabilities": {
+    "bots": true,
+    "models": true,
+    "sources": true,
+    "routines": true,
+    "events": true
+  },
+  "lastError": null,
+  "eventCoverage": {
+    "through": "2026-10-13T18:00:00Z",
+    "includedCount": 3,
+    "excludedCount": 0,
+    "unknownCount": 0,
+    "unassignedCount": 1,
+    "unassignedValueCents": 0,
+    "attributedValueCents": 540
+  }
+}

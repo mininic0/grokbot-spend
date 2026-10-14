@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T18:24:00Z",
+  "mode": "demo",
+  "account": {
+    "key": "synthetic-account",
+    "label": "Demo account"
+  },
+  "period": {
+    "start": "2026-10-01T00:00:00Z",
+    "end": "2026-11-01T00:00:00Z"
+  },
+  "weekly": {
+    "percentUsed": 65.0,
+    "resetsAt": "2026-10-16T00:00:00Z"
+  },
+  "totals": {
+    "usageCents": null,
+    "includedCents": null,
+    "onDemandCents": null,
+    "todayCents": null
+  },
+  "reconciliation": {
+    "status": "unavailable",
+    "referenceCents": null,
+    "attributedCents": null,
+    "differenceCents": null,
+    "coveragePercent": null,
+    "label": "Dollar reconciliation is unavailable because the provider omitted aggregate amounts."
+  },
+  "bots": [
+    {
+      "id": "demo-builder",
+      "name": "Build companion",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 4123000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Exact event identifiers \u00b7 recorded consumption value",
+      "eventValueCents": 700,
+      "costBasis": "recorded-usage-value"
+    },
+    {
+      "id": "demo-research",
+      "name": "Deep research",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 5426000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Exact event identifiers \u00b7 recorded consumption value",
+      "eventValueCents": 2350,
+      "costBasis": "recorded-usage-value"
+    },
+    {
+      "id": "unassigned-events",
+      "name": "Unassigned child runs",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 600,
+      "tokens": 224000,
+      "runs": null,
+      "attribution": "unassigned",
+      "detail": "Parent bot unknown \u00b7 recorded value preserved",
+      "costBasis": "recorded-usage-value"
+    }
+  ],
+  "models": [
+    {
+      "id": "demo-model-fast",
+      "name": "Demo fast model",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 4500000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic model aggregation",
+      "eventValueCents": 700,
+      "costBasis": "recorded-usage-value"
+    },
+    {
+      "id": "demo-model-pro",
+      "name": "Demo reasoning model",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 7833000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic model aggregation",
+      "eventValueCents": 2950,
+      "costBasis": "recorded-usage-value"
+    }
+  ],
+  "sources": [
+    {
+      "id": "demo-automation",
+      "name": "Automations",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 4033000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic originating-flow total"
+    },
+    {
+      "id": "demo-interactive",
+      "name": "Interactive chats",
+      "usageCents": null,
+      "includedCents": null,
+      "onDemandCents": null,
+      "tokens": 8300000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Synthetic originating-flow total"
+    }
+  ],
+  "routines": [
+    {
+      "id": "demo-research:demo-routine",
+      "name": "Research refresh",
+      "botId": "demo-research",
+      "routineId": "demo-routine",
+      "usageCents": 2350,
+      "includedCents": null,
+      "onDemandCents": null,
+      "modelCostCents": 2350,
+      "eventValueCents": 2350,
+      "chargedCents": 2350,
+      "tokens": 320000,
+      "runs": 1,
+      "attribution": "routine-run-id",
+      "detail": "Matched routine events \u00b7 model cost basis",
+      "costBasis": "model-cost"
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-10-01",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 100
+    },
+    {
+      "date": "2026-10-02",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 200
+    },
+    {
+      "date": "2026-10-03",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 300
+    },
+    {
+      "date": "2026-10-04",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 400
+    },
+    {
+      "date": "2026-10-05",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 500
+    },
+    {
+      "date": "2026-10-06",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 600
+    },
+    {
+      "date": "2026-10-07",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 700
+    },
+    {
+      "date": "2026-10-08",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 800
+    },
+    {
+      "date": "2026-10-09",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 900
+    },
+    {
+      "date": "2026-10-10",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 1000
+    },
+    {
+      "date": "2026-10-11",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 1100
+    },
+    {
+      "date": "2026-10-12",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 1200
+    },
+    {
+      "date": "2026-10-13",
+      "usageCents": null,
+      "onDemandCents": null,
+      "eventValueCents": 1300
+    }
+  ],
+  "tokenBreakdown": {
+    "input": 4100000,
+    "output": 1533000,
+    "cacheRead": 5800000,
+    "cacheWrite": 900000,
+    "scope": "demo product"
+  },
+  "events": [
+    {
+      "eventId": "demo-event-1",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T16:12:00Z",
+      "model": "demo-model-pro",
+      "conversationId": "sand-subagent-demo-routine-run",
+      "modelCostCents": 2350,
+      "chargedCents": 2350,
+      "totalTokens": 320000,
+      "attribution": {
+        "botId": "demo-research",
+        "routineId": "demo-routine",
+        "routineName": "Research refresh",
+        "method": "routine-run-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "demo-event-2",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T14:35:00Z",
+      "model": "demo-model-fast",
+      "conversationId": "demo-builder",
+      "modelCostCents": 700,
+      "chargedCents": 700,
+      "totalTokens": null,
+      "attribution": {
+        "botId": "demo-builder",
+        "routineId": null,
+        "routineName": null,
+        "method": "bot-conversation-id",
+        "unassignedReason": null
+      }
+    },
+    {
+      "eventId": "demo-event-3",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-12T09:10:00Z",
+      "model": "demo-model-pro",
+      "conversationId": null,
+      "modelCostCents": null,
+      "chargedCents": 0,
+      "totalTokens": 54000,
+      "attribution": {
+        "botId": null,
+        "routineId": null,
+        "routineName": null,
+        "method": null,
+        "unassignedReason": "missing-conversation-id"
+      }
+    },
+    {
+      "eventId": "demo-event-4",
+      "accountKey": "synthetic-account",
+      "timestampISO": "2026-10-13T11:00:00Z",
+      "model": "demo-model-pro",
+      "conversationId": "sand-subagent-demo-unknown-run",
+      "modelCostCents": 600,
+      "chargedCents": 600,
+      "totalTokens": 170000,
+      "attribution": {
+        "botId": null,
+        "routineId": null,
+        "routineName": null,
+        "method": null,
+        "unassignedReason": "unknown-subagent-parent"
+      }
+    }
+  ],
+  "warnings": [
+    "Synthetic fixture: recorded usage value is included-plan consumption, not a cash charge.",
+    "Two events have unknown parent ownership. Routine model-cost values are explicitly labeled."
+  ],
+  "capabilities": {
+    "bots": true,
+    "models": true,
+    "sources": true,
+    "routines": true,
+    "events": true
+  },
+  "lastError": null,
+  "eventCoverage": {
+    "through": "2026-10-13T18:00:00Z",
+    "includedCount": 4,
+    "excludedCount": 1,
+    "unknownCount": 2
+  },
+  "eventTotals": {
+    "modelCostCents": 3650,
+    "modelCostCentsMissingCount": 1,
+    "eventCount": 4,
+    "chargedCents": 3650,
+    "chargedCentsMissingCount": 0,
+    "todayRecordedValueCents": 950
+  }
+}

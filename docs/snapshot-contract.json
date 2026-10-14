@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T18:00:00Z",
+  "mode": "demo",
+  "account": {
+    "key": "synthetic-account",
+    "label": "Demo account"
+  },
+  "period": {
+    "start": "2026-10-01T00:00:00Z",
+    "end": "2026-11-01T00:00:00Z"
+  },
+  "weekly": {
+    "percentUsed": 65.0,
+    "resetsAt": "2026-10-16T00:00:00Z"
+  },
+  "totals": {
+    "usageCents": 12500,
+    "includedCents": 10000,
+    "onDemandCents": 2500,
+    "todayCents": 1300
+  },
+  "reconciliation": {
+    "status": "matched",
+    "referenceCents": 12500,
+    "attributedCents": 12500,
+    "differenceCents": 0,
+    "coveragePercent": 100.0,
+    "label": "Bot totals match provider product totals"
+  },
+  "bots": [
+    {
+      "id": "bot-demo",
+      "name": "Research bot",
+      "usageCents": 12500,
+      "includedCents": 10000,
+      "onDemandCents": 2500,
+      "tokens": 240000,
+      "runs": null,
+      "attribution": "provider",
+      "detail": "Provider daily billing totals"
+    }
+  ],
+  "models": [],
+  "sources": [],
+  "routines": [],
+  "daily": [
+    {
+      "date": "2026-10-13",
+      "usageCents": 1300,
+      "onDemandCents": 500
+    }
+  ],
+  "tokenBreakdown": {
+    "input": null,
+    "output": null,
+    "cacheRead": null,
+    "cacheWrite": null,
+    "scope": "unavailable"
+  },
+  "events": [],
+  "warnings": [
+    "Demonstration data only"
+  ],
+  "capabilities": {
+    "bots": true,
+    "models": true,
+    "sources": true,
+    "routines": false,
+    "events": false
+  },
+  "lastError": null,
+  "automationCatalog": {
+    "automations": [],
+    "completeness": "unknown",
+    "groups": [],
+    "issues": [
+      "not-collected"
+    ]
+  },
+  "automationCoverage": {
+    "currentRunLinks": 0,
+    "retainedRunLinks": 0,
+    "historicalComplete": false,
+    "detail": "Only exact observed run links can explain automation usage."
+  }
+}
